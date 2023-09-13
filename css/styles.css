@@ -1,0 +1,261 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arimo', sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to right, rgb(113, 71, 227), blue);
+    display: flex;
+    height: 135px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    transition: transform 1s;
+}
+
+.logo:hover{
+    transform: skew(3deg, 1deg);
+}
+
+nav{
+    text-align: center;
+}
+
+nav ul li{
+    color: rgb(81, 81, 187);
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 20px;
+}
+
+/* Inicio */
+
+main .principal{
+    background-image: url("../assets/mariana.avif");
+    background-size: cover;
+    background-position: top;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 130px);
+    grid-template-rows: repeat(8, 130px);
+    animation-duration: 2s;
+    animation-iteration-count: unset;
+    animation-name: ocultar;
+}
+
+@keyframes ocultar {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.principal_title{
+    grid-column: 8/10;
+    grid-row: 3/3;
+    align-self: self-end;
+}
+
+main .principal_text{
+    grid-column: 8/10;
+    grid-row: 4/4;
+}
+
+.principal_button{
+    grid-column: 8/10;
+    grid-row: 5/5;
+    align-self: center;
+}
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+/* Fin inicio */
+
+/* Portfolio */
+
+.articulos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+.articulos article{
+    margin-bottom: 50px;
+    border: 2px solid black;
+    display: flex;
+    align-items: baseline;
+}
+
+.articulos img{
+    width: 350px;
+    height: 350px;
+}
+
+.articulos p:hover{
+    color: cadetblue;
+}
+/* Fin portfolio */
+
+footer .footer__redes{
+    background-color: rgb(167, 167, 240);
+    display: grid;
+    grid-template-areas: 'facebook instagram linkedin';
+    height: 100px;
+    
+}
+
+footer .footer__redes a:hover{
+    transform: translateY(-2px);
+}
+
+footer .footer__redes a{
+    text-decoration: none;
+    color: black;
+    transition: transform 1ms;
+}
+
+.footer__redes .facebook{
+    grid-area: 'facebook';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__redes .instagram{
+    grid-area: 'instagram';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__redes .linkedin{
+    grid-area: 'linkedin';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* fin footer*/
+
+@media screen and (max-width: 1024px){
+    main .principal{
+        display: grid;
+        grid-template-columns: repeat(12, 100px);
+        grid-template-rows: repeat(8, 100px);
+    }
+
+    .principal_button{
+        grid-row: 6/6;
+    }
+}
+
+@media screen and (max-width: 768px){
+    main .principal{
+        grid-template-columns: repeat(7, 70px);
+        grid-template-rows: repeat(8, 100px);
+    }
+
+    .principal_button{
+        align-self: self-start;
+    }
+}
+
+@media screen and (max-width: 320px){
+    html{
+        width: 320px;
+    }
+
+    header .logo a h1{
+        font-size: 20px;
+    }
+
+    header a img{
+        width: 150px;
+    }
+
+    main .principal{
+        grid-template-columns: repeat(7, 20px);
+        grid-template-rows: repeat(8, 70px);
+    }
+
+    main .principal .principal_title{
+        grid-row: 2/2;
+    }
+
+    main .principal .principal_text{
+        grid-row: 3/4;
+    }
+
+    main .principal .principal_button{
+        grid-row: 6/6;
+        align-self: self-end;
+    }
+
+    footer .footer__redes a i{
+        width: 20px;
+    }
+}
