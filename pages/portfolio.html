@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
@@ -18,60 +19,79 @@
             <img alt="Logo de Mariana - Fotografia" class="logo" src="../assets/logo.png">
         </a>
     </header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/portfolio.html">Portfolio</a></li>
-            <li><a href="../pages/quienSoy.html">¿Quién Soy?</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <!-- Titulo, logo y navbar -->
 
     <!-- Principal -->
     <main class="articulos">
-        <article class="articulo1">
-            <div>
-                <img class="articulo__img" src="../assets/foto1.jpg">
-                <h3 class="articulo__title">Fotografias en eventos</h3>
-                <p class="articulo__text">Haz click para ver mis fotografias en eventos!</p>
+        <div class="card" style="width: 23rem;">
+            <img src="../assets/foto1.jpg" class="card-img-top"  alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-        </article>
-        <article class="articulo2">
-            <div>
-                <img class="articulo__img" src="../assets/foto2.jpg">
-                <h3 class="articulo__title">Fotografias en casamientos</h3>
-                <p class="articulo__text">Haz click para ver mis fotografias en casamientos!</p>
+          </div>
+
+          <div class="card" style="width: 23rem;">
+            <img src="../assets/foto1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-        </article>
-        <article class="articulo3">
-            <div>
-                <img class="articulo__img" src="../assets/foto3.jpeg">
-                <h3 class="articulo__title">Fotografias en eventos deportivos</h3>
-                <p class="articulo__text">Haz click para ver mis fotografias en eventos deportivos!</p>
+          </div>
+          <div class="card" style="width: 23rem;">
+            <img src="../assets/foto1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-        </article>
-        <article class="articulo4">
-            <div>
-                <img class="articulo__img" src="../assets/foto1.jpg">
-                <h3 class="articulo__title">Fotografias en eventos deportivos</h3>
-                <p class="articulo__text">Haz click para ver mis fotografias en eventos deportivos!</p>
+          </div>
+          <div class="card" style="width: 23rem;">
+            <img src="../assets/foto1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-        </article>
-        <article class="articulo5">
-            <div>
-                <img class="articulo__img" src="../assets/foto2.jpg">
-                <h3 class="articulo__title">Fotografias en eventos deportivos</h3>
-                <p class="articulo__text">Haz click para ver mis fotografias en eventos deportivos!</p>
+          </div>
+          <div class="card" style="width: 23rem;">
+            <img src="../assets/foto1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-        </article>
-        <article class="articulo6">
-            <div>
-                <img class="articulo__img" src="../assets/foto3.jpeg">
-                <h3 class="articulo__title">Fotografias en eventos deportivos</h3>
-                <p class="articulo__text">Haz click para ver mis fotografias en eventos deportivos!</p>
+          </div>
+          <div class="card" style="width: 23rem;">
+            <img src="../assets/foto1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-        </article>
+          </div>
     </main>
     <!-- Principal -->
 
@@ -84,5 +104,6 @@
         </div>
     </footer>
     <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
